@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
             gameOver = true;
             playerAnim.SetBool("Death_b", true);
             playerAnim.SetInteger("DeathType_int", 1);
-            Debug.Log("YOU SUCK!!!!!");
+            Debug.Log("Game Over :(");
             explosionParticle.Play();
             dirtParticle.Stop();
             playerAudio.PlayOneShot(crashSound, 1.0f);
